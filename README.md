@@ -77,5 +77,12 @@ Password: Admin123
 4. Run the Spring Boot application
 5. Open browser and visit:
 
-```bash
 http://localhost:8080/login
+
+---
+
+## Project Developed By
+
+Mohit Kumar Pani
+
+Software Engineer | Java Full Stack Developer
