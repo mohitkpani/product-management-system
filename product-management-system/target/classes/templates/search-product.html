@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Search Product</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+
+            background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30');
+
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .overlay{
+            background-color: rgba(0,0,0,0.7);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            background-color: rgba(255,255,255,0.95);
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+        }
+
+        h1{
+            color: #333;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #e65c00;
+        }
+
+        .home-btn{
+            display: inline-block;
+            margin-top: 15px;
+            width: 94%;
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover{
+            background-color: darkblue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <div class="container">
+
+            <h1>Search Product By ID</h1>
+
+            <form action="/product-by-id" method="get">
+
+                <input type="number"
+                       name="id"
+                       placeholder="Enter Product ID"
+                       required>
+
+                <button type="submit">Search Product</button>
+
+            </form>
+
+            <a href="/" class="home-btn">Back to Home</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

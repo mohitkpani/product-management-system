@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            height: 100vh;
+        }
+
+        .overlay{
+            background: rgba(0,0,0,0.55);
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .login-container{
+
+            width: 400px;
+
+            background: rgba(255,255,255,0.15);
+
+            backdrop-filter: blur(10px);
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            box-shadow: 0px 0px 20px black;
+
+            text-align: center;
+
+            color: white;
+        }
+
+        .login-container h1{
+
+            margin-bottom: 30px;
+
+            font-size: 38px;
+
+            letter-spacing: 1px;
+        }
+
+        .input-box{
+
+            width: 100%;
+
+            padding: 14px;
+
+            margin-top: 15px;
+
+            margin-bottom: 22px;
+
+            border: none;
+
+            outline: none;
+
+            border-radius: 8px;
+
+            font-size: 15px;
+
+            background: rgba(255,255,255,0.85);
+        }
+
+        .credentials{
+
+            background-color: rgba(255,255,255,0.2);
+
+            padding: 12px;
+
+            border-radius: 8px;
+
+            margin-bottom: 20px;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+        }
+
+        .login-btn{
+
+            width: 100%;
+
+            padding: 14px;
+
+            border: none;
+
+            border-radius: 8px;
+
+            background-color: #ff6600;
+
+            color: white;
+
+            font-size: 17px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .login-btn:hover{
+
+            background-color: #e65c00;
+
+            transform: scale(1.03);
+        }
+
+        .tagline{
+
+            margin-top: 18px;
+
+            font-size: 14px;
+
+            color: #f1f1f1;
+        }
+
+        .footer{
+
+            margin-top: 25px;
+
+            color: white;
+
+            font-size: 15px;
+
+            text-align: center;
+
+            background: rgba(0,0,0,0.4);
+
+            padding: 12px 25px;
+
+            border-radius: 10px;
+        }
+
+        .footer span{
+
+            color: #ffcc00;
+
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <div class="login-container">
+
+            <h1>Welcome Back</h1>
+
+            <form th:action="@{/login}" method="post">
+
+                <input type="text"
+                       name="username"
+                       class="input-box"
+                       placeholder="Enter Username"
+                       required>
+
+                <input type="password"
+                       name="password"
+                       class="input-box"
+                       placeholder="Enter Password"
+                       required>
+
+                <div class="credentials">
+
+                    <p><strong>Username :</strong> Admin</p>
+
+                    <p><strong>Password :</strong> Admin123</p>
+
+                </div>
+
+                <button type="submit"
+                        class="login-btn">
+
+                        Login
+
+                </button>
+
+            </form>
+
+            <p class="tagline">
+                Smart Management • Better Experience
+            </p>
+
+        </div>
+
+        <div class="footer">
+
+            Project has been developed by
+            <span>Mohit Pani</span> |
+            Software Engineer |
+            Passionate Developer
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

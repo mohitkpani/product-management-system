@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Product Management Dashboard</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .overlay{
+            background-color: rgba(0,0,0,0.6);
+            height: 100vh;
+            padding-top: 30px;
+        }
+
+        h1{
+            margin-top: 40px;
+            color: white;
+            font-size: 45px;
+        }
+
+        .container{
+            margin-top: 60px;
+        }
+
+        .btn{
+            display: inline-block;
+            width: 220px;
+            margin: 15px;
+            padding: 15px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background-color: #e65c00;
+            transform: scale(1.05);
+        }
+
+        .logout-btn{
+            background-color: red;
+        }
+
+        .logout-btn:hover{
+            background-color: darkred;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <h1>Product Management System</h1>
+
+        <div class="container">
+
+            <a href="/add-product" class="btn">Add Product</a>
+
+            <a href="/products-ui" class="btn">View All Products</a>
+
+            <a href="/search-product" class="btn">View Product By ID</a>
+
+            <a href="/update-product" class="btn">Update Product</a>
+
+            <a href="/delete-product" class="btn">Delete Product</a>
+
+            <br>
+
+            <a href="/logout" class="btn logout-btn">Logout</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
