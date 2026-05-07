@@ -42,23 +42,22 @@ A full stack Product Management System developed using Spring Boot, Thymeleaf, M
 ## Project Screenshots
 
 ### Login Page
-![Login Page](screenshots/Login.jpg)
+![Login Page](product-management-system/screenshots/Login.jpg)
 
 ### Home Dashboard
-![Home Dashboard](screenshots/Home.jpg)
+![Home Dashboard](product-management-system/screenshots/Home.jpg)
 
 ### Add Product Page
-![Add Product](screenshots/Add-product.jpg)
+![Add Product](product-management-system/screenshots/Add-product.jpg)
 
 ### View Product Page
-![View Product](screenshots/View-product.jpg)
+![View Product](product-management-system/screenshots/View-product.jpg)
 
 ### Update Product Page
-![Update Product](screenshots/Update-product.jpg)
+![Update Product](product-management-system/screenshots/Update-product.jpg)
 
 ### Delete Product Page
-![Delete Product](screenshots/Delete-product.jpg)
-
+![Delete Product](product-management-system/screenshots/Delete-product.jpg)
 ---
 
 ## Default Login Credentials
